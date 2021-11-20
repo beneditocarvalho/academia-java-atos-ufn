@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Resultado</title>
+</head>
+<body>
+	<h1>Resultado do Cálculo</h1>
+	<p th:text="'Número 1: ' + ${calculadoraModel.primeiro}"></p>
+	<p th:text="'Número 2: ' + ${calculadoraModel.segundo}"></p>
+	<p th:text="'Resultado: ' + ${calculadoraModel.resultado}"></p>
+	<a href="/calc">Efetuar novo cálculo</a>
+</body>
+</html>

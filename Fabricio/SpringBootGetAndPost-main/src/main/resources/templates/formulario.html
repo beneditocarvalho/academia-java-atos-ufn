@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cadastro!</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+	<form action="#" method="post" th:action="@{/formulario}" th:object="${pessoaModel}">
+		<table>
+			<tr>
+				<td>Nome</td>
+				<td> 
+					<input type="text" th:field="*{nome}" /> 
+				</td>
+			</tr>
+			<tr>
+				<td>Idade</td>
+				<td> 
+					<input type="number" th:field="*{idade}" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit" >Salvar</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

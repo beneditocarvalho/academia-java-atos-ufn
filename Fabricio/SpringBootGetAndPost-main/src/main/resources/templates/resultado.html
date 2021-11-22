@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <title>Sucesso!</title>
+	    <meta charset="UTF-8">
+	</head>
+	<body>
+	
+		<h1>Cadastrado:</h1>
+		<p th:text="'Nome: ' + ${pessoaModel.nome}" ></p>
+		<p th:text="'Idade: ' + ${pessoaModel.idade}"></p>
+		<a href="/formulario">Efetuar novo cadastro?</a>
+	
+	</body>
+</html>

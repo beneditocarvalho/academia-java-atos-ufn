@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Teste 4</title>
+    <meta charset="utf-8"/>
+    <script>
+        var quebrou = false;
+       function statusLampada(tipo){
+           if (!quebrou){
+            document.getElementById("troca").src = "_imagens/_lampada/" + tipo +".jpg";
+            if (tipo == 'lampada-quebrada'){
+                quebrou = true;
+            }
+           }
+        }
+    </script>
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/_lampada/lampada-apagada.jpg" id="troca" onmousemove="statusLampada('lampada-acesa')" onmouseout="statusLampada('lampada-apagada')" onclick="statusLampada('lampada-quebrada')"/>
+</body>
+</html>

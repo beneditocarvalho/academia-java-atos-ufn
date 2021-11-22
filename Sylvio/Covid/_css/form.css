@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+form{
+    width: 500px;
+    margin: auto;
+}
+input, textarea{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255,255,255,.4);
+}
+
+input:hover, textarea:hover{
+    background-color: #dddddd;
+}
+legend{
+    color: #888888;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: sans-serif;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+    }
+fieldset#sexo{
+    width: 300px;
+}
+fieldset#usuario{
+    background: url("../_imagens/usuario.png") no-repeat 95% 95%;
+}
+fieldset#endereco{
+    background: url("../_imagens/casa1.png") no-repeat 95% 95%;
+}
+fieldset#mensagem{
+    background: url("../_imagens/correios.png") no-repeat 95% 95%;
+    background-size: 250px;
+}
+fieldset#ajuda{
+    background: url("../_imagens/ajuda.png") no-repeat 75% 75%;
+}

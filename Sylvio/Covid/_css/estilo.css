@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    hyphens: auto;
+}
+h2{
+    text-align: left;
+}
+
+figure.foto_legenda{
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px black;
+        width: 650px;
+
+}
+figure.foto_legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto_legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: 2s;
+}
+
+figure.foto_legenda:hover figcaption {
+    opacity: 1;
+}
+
+ /* Formatação do Menu   */
+ nav#menu {
+     display:block;
+ }
+
+ nav#menu ul {
+     list-style: none;
+     text-transform: uppercase;
+     position: absolute;
+     top: 0px;
+     left: 400px;
+ }
+
+ nav#menu li {
+     display: inline-block;
+     background-color: #dddddd;
+     padding: 10px;
+     margin: 2px;
+     transition: background-color 1s;
+ }
+ nav#menu h1{
+     display: none;
+ }

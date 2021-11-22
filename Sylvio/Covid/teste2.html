@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Teste 2</title>
+    <meta charset="utf-8"/>
+    <script>
+       function statusLampada(tipo){
+           if (tipo == 1) {
+                arquivo = "_imagens/_lampada/lampada-acesa.jpg";
+           }
+           if (tipo == 2) {
+                arquivo = "_imagens/_lampada/lampada-apagada.jpg";
+           }
+           if (tipo == 3) {
+                arquivo = "_imagens/_lampada/lampada-quebrada.jpg";
+           }
+            document.getElementById("troca").src = arquivo;
+        }
+    </script>
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="_imagens/_lampada/lampada-apagada.jpg" id="troca" onmousemove="statusLampada(1)" onmouseout="statusLampada(2)" onclick="statusLampada(3)"/>
+</body>
+</html>

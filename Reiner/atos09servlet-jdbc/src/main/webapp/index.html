@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Servlet e JDBC</title>
 </head>
-<body>
-
-</body>
+ <body>
+        <h1>Bem-vindo ao Servlet para acesso JDBC ao Banco de Dados JavaEE1 e à tabela Pessoa</h1>
+        <a href="ServletPessoa">Acessar o servlet ServletPessoa - doGet</a>
+        
+        <br>
+        <br>
+        <form action="ServletPessoa" method="POST">
+                Digite o nome: 
+                <input type="text" name="nome" />
+                Digite o email: 
+                <input type="text" name="email" />
+                Digite a cidade: 
+                <input type="text" name="cidade" />
+                <input type="submit" value="Cadastrar - doPost" />
+        </form>
+    </body>
 </html>

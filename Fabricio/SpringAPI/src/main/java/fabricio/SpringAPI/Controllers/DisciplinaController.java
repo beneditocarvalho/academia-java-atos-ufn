@@ -15,9 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import fabricio.SpringAPI.Models.AlunoModel;
 import fabricio.SpringAPI.Models.DisciplinaModel;
-import fabricio.SpringAPI.Repositories.AlunoRepository;
 import fabricio.SpringAPI.Repositories.DisciplinaRepository;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

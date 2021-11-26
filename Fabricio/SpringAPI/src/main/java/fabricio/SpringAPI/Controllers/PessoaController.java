@@ -62,7 +62,7 @@ public class PessoaController {
 		pessoaRepository.deleteById(id);
 	}
 
-	@ApiOperation(value = "Altera uma pessoa, recenendo os dados da pessoa no RequestBody e o ID PathVariable",
+	@ApiOperation(value = "Altera uma pessoa, recebendo os dados da pessoa no RequestBody e o ID PathVariable",
 			response = Iterable.class, tags = "putPessoa")
 	@PutMapping("/{id}")
 	public PessoaModel updatePessoa(@RequestBody PessoaModel pessoa, @PathVariable Long id) {

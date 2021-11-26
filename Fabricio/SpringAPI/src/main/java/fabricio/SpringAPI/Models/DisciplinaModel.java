@@ -45,4 +45,10 @@ public class DisciplinaModel {
 	public void setVagas(Integer vagas) {
 		this.vagas = vagas;
 	}
+
+	@Override
+	public String toString() {
+		return "DisciplinaModel [id=" + id + ", nome=" + nome + ", vagas=" + vagas + "]";
+	}
+	
 }

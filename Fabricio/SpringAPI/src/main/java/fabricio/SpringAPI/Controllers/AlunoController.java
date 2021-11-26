@@ -62,7 +62,7 @@ public class AlunoController {
 		alunoRepository.deleteById(id);
 	}
 
-	@ApiOperation(value = "Altera um aluno, recenendo os dados do estudante no RequestBody e o ID PathVariable",
+	@ApiOperation(value = "Altera um aluno, recebendo os dados do estudante no RequestBody e o ID PathVariable",
 			response = Iterable.class, tags = "putAluno")
 	@PutMapping("/{id}")
 	public AlunoModel updateAluno(@RequestBody AlunoModel aluno, @PathVariable Long id) {

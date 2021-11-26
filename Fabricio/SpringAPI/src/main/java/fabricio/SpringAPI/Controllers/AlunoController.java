@@ -63,7 +63,7 @@ public class AlunoController {
 	}
 
 	@ApiOperation(value = "Altera um aluno, recenendo os dados do estudante no RequestBody e o ID PathVariable",
-			response = Iterable.class, tags = "putEstudante")
+			response = Iterable.class, tags = "putAluno")
 	@PutMapping("/{id}")
 	public AlunoModel updateAluno(@RequestBody AlunoModel aluno, @PathVariable Long id) {
 		AlunoModel p = alunoRepository.getOne(id);
